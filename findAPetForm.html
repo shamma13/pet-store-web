@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find a dog/cat</title>
+    <link rel="stylesheet" href="mainpage.css">
+    <link rel="stylesheet" href="forms.css">
+    <style>
+        #container {
+        min-height:100%
+     }
+       footer {
+        font-size: 10px;
+        overflow: hidden;
+        position: relative;
+        bottom: 0 !important; 
+        left:0;
+        right:0;
+        margin: 4px;
+        text-align: center;
+        border: 3px solid darkblue;
+        color: black;   
+       }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+    <header>
+        <a href="Adopt a Pet.html"><img class="image" src="logo.png" width="140" height="130" alt=""></a>
+    </header>
+    <div id="mySidenav">
+        <a href="Adopt a Pet.html">Home Page</a>
+        <a href="Browse available pets.html">Browse Available Pets</a>
+        <a href="find a pet form.html">Find a dog/cat</a>
+        <a href="Dog Care.html">Dog Care</a>
+        <a href="Cat Care.html">Cat Care</a>
+        <a href="Pet_to_give.html">Have a pet to give away</a>
+        <a href="Contact Us.html">Contact Us</a>
+    </div>
+    
+    <div id="main">
+    <center><div class="recenter">
+        <center><h1>Find your new pet!</h1></center>
+    <form>
+        <label for="pet">Would you like a Cat or Dog?</label>
+        <label for="cat">Cat</label>
+        <input type="checkbox" id="pet1">
+        <label for="dog">Dog</label>
+        <input type="checkbox" id="pet2">
+        
+        <!-- <br> -->
+        <label for="breed">Breed of dog or cat</label>
+        <select name="breed" id="breed">
+            <option value="default"></option>
+            <option value="persian">Persian Cat</option>
+            <option value="siamese">Siamese Cat</option>
+            <option value="burmese">Burmese Cat</option>
+            <option value="ragdoll">Ragdoll Cat</option>
+            <option value="birman">Birman Cat</option>
+            <option value="bulldog">Bulldog</option>
+            <option value="shepherd">German Shepherd Dog</option>
+            <option value="pomeranian">Pomeranian Dog</option>
+            <option value="yorkshire">Yorkshire Terrier Dog</option>
+            <option value="chihuahua">Chihuahua Dog</option>
+            <option value="whatever">Doesn't matter</option>
+        </select>
+        <br>
+        <label for="age">Preferred age of animal</label>
+        <select name="age" id="age">
+            <option value="default"></option>
+            <option value="1">0-1 yr</option>
+            <option value="2">1-2 yr</option>
+            <option value="3">2-3 yr</option>
+            <option value="4">3-4 yr</option>
+            <option value="5">Senior Pet (5+ yr)</option>
+            <option value="6">Doesn't matter</option>
+        </select>
+        <br>
+        <label for="gender">Preferred gender of animal</label>
+        <select name="gender" id="gender">
+            <option value="default"></option>
+            <option value="1">Male</option>
+            <option value="2">Female</option>
+            <option value="3">Doesn't matter</option>
+        </select>
+
+        <label for="getAlong">Does your new pet need to get along with other pets or children?</label>
+        <select name="getAlong" id="getAlong">
+            <option value="default"></option>
+            <option value="1">Yes</option>
+            <option value="2">No</option>
+        </select>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Clear</button>
+    </form>
+</center></div>
+</div>
+</div>
+
+<footer>
+    <p>We do not sell, rent or exchange any personal information collected from our supporters with any other organization or entity</p>
+    <p>Copyright &copy; 2022 Raise the woof.</p>
+</footer>
+
+</body>
+</html>

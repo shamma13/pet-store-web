@@ -1,0 +1,20 @@
+#container {
+    min-height:128%
+    }
+     .content {
+    position: absolute;
+    top: 152px !important;
+    left: 200px !important;
+    right: 0;
+   }
+
+   .content p, h1 {
+    font-family: 'Pluto Sans',"Helvetica Neue",Helvetica,Arial,sans-serif;
+    margin: 0 0 15px;
+    line-height: 1.7;
+   }
+
+   .content h2 {
+    font-size: calc(17px + (25 - 17) * ((100vw - 320px) / (1920 - 320)));
+    color: #47aba8;
+   }

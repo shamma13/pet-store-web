@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate your order</title>
+    <script src="OrderScript.js"></script>
+   
+</head>
+
+<body>
+<h1>Order Books Online</h1>
+<fieldset>
+<table>
+    <tr>
+        <th>Book</th>
+        <th>Quantity</th>
+        <th>Price</th>
+    </tr>
+    <tr>
+        <td>Basic XHTML</td>
+        <td><input type="text" id="XHTML"></td>
+        <td>$19.99</td>
+    </tr>
+    <tr>
+        <td>Intro to PHP</td>
+        <td><input type="text" id="PHP"></td>
+        <td>$86.00</td>
+    </tr>
+    <tr>
+        <td>Advanced JQuery</td>
+        <td><input type="text" id="JQuery"></td>
+        <td>$55.00</td>
+    </tr>
+</table>
+</fieldset>
+<br><br>
+<input type = "button" onclick = "placeOrder()" value = "Place Order">
+
+<p id="orderDetails"></p>
+
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Javascript</title>
+    <script>
+        function addNumbers(numbers) {
+            var sum = 0;
+
+            for (var i = 0; i < numbers.length; i++) {
+                sum = sum + numbers[i];
+            }
+            document.getElementById("sum").innerHTML = sum;
+        }
+
+        function getCurrentDate() {
+            let days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+            let months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+            let today = new Date();
+
+            let day = days[today.getDay()];
+            let month = months[today.getMonth()];
+            let date = today.getDate();
+            let year = today.getFullYear();
+
+            let result = day + ', ' + month + ' ' + date + ', ' + year;
+
+            document.getElementById("currentDate").innerHTML = result;
+        }
+
+        function arrayToString(words) {
+            var string = "";
+
+            for (var i = 0; i < words.length; i++) {
+                string = string + words[i] + " ";
+            }
+            document.getElementById("sentence").innerHTML = string;
+        }
+
+        function findMaxNumber() {
+            let numArray = [1,25,2,4,3,20,16];
+            var max = numArray[0];
+
+            for (var i = 1; i < numArray.length; i++) {
+                if(numArray[i] > max) {
+                    max = numArray[i];
+                }
+            }
+            document.getElementById("number").innerHTML = max;
+        }
+
+        function getDigits(str) {
+            var strNum = str.match(/(\d+)/);
+
+            if (strNum) {
+                document.getElementById("digits").innerHTML = strNum[0];
+            }
+
+        }
+
+        function reverseString(str) {
+            var newStr='';
+            for (var i = str.length - 1; i >= 0; i--) {
+                newStr += str[i];
+            }
+            document.getElementById("reverse").innerHTML = newStr;
+        }
+
+    </script>
+</head>
+
+<body>
+
+    <h1>Function 1: addNumbers</h1>
+    
+        <input type = "button" onclick = "addNumbers([1,2,4,5,6,8,9])" value = "SUM">
+        <h2>Result: <span id="sum"></span></h2>
+
+    <h1>Function 2: getCurrentDate</h1>
+
+        <input type = "button" onclick = "getCurrentDate()" value = "DATE">
+        <h2>Result: <span id="currentDate"></span></h2>
+    
+    <h1>Function 3: arrayToString</h1>
+    
+        <input type = "button" onclick = "arrayToString(['The', 'sun', 'is', 'shining'])" value = "SENTENCE">
+        <h2>Result: <span id="sentence"></span></h2>
+
+    <h1>Function 4: findMaxNumber</h1>
+    
+        <input type = "button" onclick = "findMaxNumber()" value = "MAX VALUE">
+        <h2>Result: <span id="number"></span></h2>
+    
+    <h1>Function 5: getDigits</h1>
+    
+        <input type = "button" onclick = "getDigits('jhkjki56768')" value = "DIGITS">
+        <h2>Result: <span id="digits"></span></h2>
+  
+    <h1>Function 6: reverseString</h1>
+    
+        <input type = "button" onclick = "reverseString('SOEN287')" value = "REVERSE">
+        <h2>Result: <span id="reverse"></span></h2>
+</body>
+</html>
